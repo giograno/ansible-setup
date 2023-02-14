@@ -25,5 +25,5 @@
     user: git
     host: "github.com"
     hostname: "github.com"
-    identity_file: "{{ desk_key }}"
+    identity_file: "{{ dest_key }}"
     state: present
