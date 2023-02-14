@@ -24,10 +24,10 @@
 - name: Install stormssh module
   pip:
     name: stormssh
-    
+
 - name: Add git host in the configuration
   community.general.ssh_config:
-    user: git
+    user: giograno
     host: "github.com"
     hostname: "github.com"
     identity_file: "{{ dest_key }}"
