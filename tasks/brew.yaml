@@ -1,0 +1,62 @@
+- name: Ensures taps are present via homebrew
+  community.general.homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - hashicorp/tap
+
+- name: Install general packages
+  community.general.homebrew:
+    name: "{{ item }}"
+    path: "/Applications"
+    state: present
+  with_items:
+    - htop
+    - mas
+    - htop
+    - ssh-copy-id
+    - the_silver_searcher
+    - tmux
+    - tree
+    - wget
+    - curl
+    - zsh-completions
+    - gnupg
+    - gh
+    - fzf
+    - bat
+    - fx
+    - pre-commit
+    - jq
+    # developer utilities
+    - hugo
+    - pyenv
+    - pyenv-virtualenv
+    - go
+    - maven
+    - php
+    # dev ops utils
+    - awscli
+    - aws-cdk
+    - kubectl
+    - minikube
+
+- name: Install casks 
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    install_options: 'appdir=/Applications'
+  with_items: 
+    - alacritty
+    - vlc
+    - spotify
+    - visual-studio-code
+    - jetbrains-toolbox
+    - firefox
+    - alfred
+    - docker
+    - whatsapp
+    - rectangle
+    - notion
+    - obsidian
+    - via
