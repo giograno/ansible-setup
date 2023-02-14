@@ -32,3 +32,8 @@
     hostname: "github.com"
     identity_file: "{{ dest_key }}"
     state: present
+
+- name: Evaluating the authentication agent and adding the key
+  shell: |
+    eval "$(ssh-agent)"
+    ssh-add "{{ dest_key }}"
