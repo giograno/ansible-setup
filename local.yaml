@@ -5,4 +5,5 @@
   tasks:
     - include: tasks/ssh.yaml
     - include: tasks/brew.yaml
+    - include: tasks/zsh.yaml
     - include: tasks/dotfiles.yaml
