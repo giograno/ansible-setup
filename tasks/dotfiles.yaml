@@ -10,7 +10,7 @@
   - dotfiles
 
 - name: Stow dotfiles
-  command: "stow -d {{ dotfiles }} -S {{ item }}"
+  command: "stow --adopt -d {{ dotfiles }} -S {{ item }}"
   with_items: 
     - alacritty
     - functions
