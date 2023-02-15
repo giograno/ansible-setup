@@ -7,9 +7,6 @@
 
 - name: Installing sdk manager
   shell: curl -s "https://get.sdkman.io" | bash
-  args:
-    path: "{{ lookup('env', 'HOME') }}/.sdkman"
-    warn: false
   when: not sdk.stat.exists
 
 - name: Update sdkman
