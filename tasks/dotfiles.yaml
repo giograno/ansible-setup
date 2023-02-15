@@ -6,6 +6,8 @@
     update: yes
     accept_hostkey: yes
     version: main
+  tags:
+  - dotfiles
 
 - name: Stow dotfiles
   command: "stow -d {{ dotfiles }} -S {{ item }}"
@@ -16,3 +18,5 @@
     - tmux
     - vim
     - zsh
+  tags:
+  - dotfiles

@@ -2,7 +2,7 @@
   vars:
     source_key: "./.ssh/id_rsa"
     dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
-    dotfiles: "{{ lookup('env', 'HOME') }}/.dotfiles"
+    dotfiles: "{{ lookup('env', 'HOME') }}/dotfiles"
     sdkman: "source {{ lookup('env', 'HOME') }}/.sdkman/bin/sdkman-init.sh"
   tasks:
     - include: tasks/ssh.yaml
