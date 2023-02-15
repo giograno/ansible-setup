@@ -9,7 +9,7 @@
 
 - name: Install Oh-My-Zsh
   shell: 
-    cmd: curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+    cmd: 'curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh'
   tags:
   - zsh
   when: oh_my_stats.stat.exists == False
