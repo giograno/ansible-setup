@@ -61,3 +61,28 @@
     - notion
     - obsidian
     - via
+
+- name: Install 1Password
+  community.general.mas:
+    id: 1333542190
+    state: present
+
+- name: Install Slack
+  community.general.mas:
+    id: 803453959
+    state: present
+
+- name: Install Telegram
+  community.general.mas:
+    id: 747648890
+    state: present
+
+- name: Install Amphetamine
+  community.general.mas:
+    id: 937984704
+    state: present
+
+- name: Install Amphetamine
+  community.general.mas:
+    id: 585829637
+    state: present

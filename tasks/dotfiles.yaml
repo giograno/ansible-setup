@@ -1,8 +1,18 @@
 - name: Cloning dotfiles
   ansible.builtin.git:
     repo: 'git@github.com:giograno/dotfiles.git'
-    dest: "{{ lookup('env', 'HOME') }}/.dotfiles"
+    dest: "{{ dotfiles }}"
     recursive: yes
     update: yes
     accept_hostkey: yes
     version: main
+
+- name: Stow dotfiles
+  command: "stow -d {{ dotfiles }} -S {{ item }}"
+  with_items: 
+    - alacritty
+    - bin
+    - git
+    - tmux
+    - vim
+    - zsh

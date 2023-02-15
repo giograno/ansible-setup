@@ -28,4 +28,3 @@
     dest: "~/.oh-my-zsh/plugins/zsh-syntax-highlighting"
   tags:
   - zsh
-
