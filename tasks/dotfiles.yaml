@@ -13,6 +13,7 @@
   command: "stow -d {{ dotfiles }} -S {{ item }}"
   with_items: 
     - alacritty
+    - functions
     - bin
     - git
     - tmux
