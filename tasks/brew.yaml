@@ -37,6 +37,7 @@
     - maven
     - php
     # dev ops utils
+    - terraform
     - awscli
     - aws-cdk
     - kubectl
