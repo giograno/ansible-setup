@@ -29,6 +29,7 @@
     - fx
     - pre-commit
     - jq
+    - gnu-sed
     # developer utilities
     - hugo
     - pyenv
