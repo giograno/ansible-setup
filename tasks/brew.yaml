@@ -63,6 +63,8 @@
     - notion
     - obsidian
     - via
+    - nordvpn
+    - signal
 
 - name: Install 1Password
   community.general.mas:
