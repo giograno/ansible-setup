@@ -30,6 +30,7 @@
     - pre-commit
     - jq
     - gnu-sed
+    - neovim
     # developer utilities
     - hugo
     - pyenv
