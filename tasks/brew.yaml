@@ -24,6 +24,7 @@
     - curl
     - zsh-completions
     - gnupg
+    - fd
     - gh
     - fzf
     - bat
