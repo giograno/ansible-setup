@@ -17,6 +17,7 @@
     - htop
     - ssh-copy-id
     - the_silver_searcher
+    - ripgrep
     - tmux
     - tree
     - wget
